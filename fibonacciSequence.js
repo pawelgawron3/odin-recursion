@@ -11,10 +11,8 @@ function fibs(n) {
 console.log(fibs(8));
 
 function fibsRec(n) {
-  if (n === 1) {
-    return 0;
-  } else if (n === 2) {
-    return 1;
+  if (n === 1 || n === 2) {
+    return n - 1;
   } else {
     return fibsRec(n - 1) + fibsRec(n - 2);
   }
